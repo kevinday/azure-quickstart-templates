@@ -22,11 +22,12 @@ echo "vmname: $VMNAME"
 # install tools
 #####################
 time sudo npm install azure-cli -g
-time sudo apt-get install nodejs-legacy
+#time sudo apt-get install nodejs-legacy
+#time sudo update-alternatives --install /usr/bin/node nodejs /usr/bin/nodejs 100
 time sudo apt-get update && sudo apt-get install screen -y
 time sudo apt-get update && sudo apt-get install npm -y
-time sudo npm install grunt --save-dev
-time sudo npm install -g grunt-cli
+#time sudo npm install grunt --save-dev
+#time sudo npm install -g grunt-cli
 
 ####################
 # Intsall Geth
@@ -62,9 +63,11 @@ mkdir ~/.ethash
 ####################
 #Install Augur Front End
 ####################
-git clone https://github.com/AugurProject/augur.git
-cd augur
-#npm install
+#git clone https://github.com/AugurProject/augur.git
+#cd augur
+#sudo npm install
+#sudo npm run build
+
 #grunt
 #npm start
 
