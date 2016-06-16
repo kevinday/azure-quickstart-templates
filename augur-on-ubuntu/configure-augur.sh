@@ -20,3 +20,5 @@ echo "User home dir: $HOMEDIR"
 echo "vmname: $VMNAME"
 
 cd $HOMEDIR
+
+ps -p $$
