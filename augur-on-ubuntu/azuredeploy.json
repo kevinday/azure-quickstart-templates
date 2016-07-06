@@ -140,6 +140,20 @@
               "priority": 103,
               "direction": "Inbound"
             }
+          },
+          {
+            "name": "cache_node",
+            "properties": {
+              "description": "cache node",
+              "protocol": "Tcp",
+              "sourcePortRange": "*",
+              "destinationPortRange": "8547",
+              "sourceAddressPrefix": "Internet",
+              "destinationAddressPrefix": "*",
+              "access": "Allow",
+              "priority": 103,
+              "direction": "Inbound"
+            }
           }
         ]
       }
